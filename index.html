@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba</title>
+    <link
+      href="https://myCDN.com/prism@v1.x/themes/prism.css"
+      rel="stylesheet"
+    />
+    <script src="https://myCDN.com/prism@v1.x/components/prism-core.min.js"></script>
+    <script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"
+    ></script>
+  </head>
+  <body>
+    <deckgo-highlight-code terminal="ubuntu">
+      <code slot="code">console.log('Hello World');</code>
+      <span slot="user">david@ubuntu:~</span>
+    </deckgo-highlight-code>
+
+    <deckgo-highlight-code
+      src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"
+    ></deckgo-highlight-code>
+    ​
+    <deckgo-highlight-code language="java" highlight-lines="2,2">
+      <code slot="code">
+        public static void main(String args[]) { System.out.println("Hello
+        World"); }
+      </code>
+    </deckgo-highlight-code>
+
+    <deckgo-highlight-code
+      theme="lucario"
+      class="deckgo-highlight-code-carbon deckgo-highlight-code-theme-lucario hydrated"
+      language="javascript"
+      terminal="carbon"
+    >
+      <code slot="code">
+        "require": { "infyomlabs/laravel-generator": "8.0.x-dev",
+        "laravelcollective/html": "^6.2", "infyomlabs/adminlte-templates":
+        "^2.0" }
+      </code>
+    </deckgo-highlight-code>
+  </body>
+</html>
